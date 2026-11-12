@@ -26,5 +26,12 @@ class githandler:
 
     def git_commit(self,message):
         self.run_git(["commit","-m",message])
+
+    def git_diff(self):
+        result = self.run_git(["diff", "--cached"])
+        return result.stdout
+
+    def git_push(self):
+        self.run_git(["push"])
     
             
