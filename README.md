@@ -124,5 +124,3 @@ Edit it there if you want a different style.
 | `generate_message.py` | Builds the prompt sent to the model. |
 | `config.py` | User-editable settings. |
 
-
-Hi ariana
