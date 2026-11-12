@@ -1,10 +1,10 @@
 
 from llm_handler import llmhandler
-
+from generate_message import build_prompt
 
 def main():
 
-    
+
 
 
     while True:

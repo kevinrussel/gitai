@@ -18,4 +18,5 @@ Requirements:
 - Do not invent functionality.
 - Return only the commit message.
 
-Git diff:{diff}"""
+Git diff:{diff}
+"""

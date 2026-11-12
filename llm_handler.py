@@ -1,12 +1,13 @@
 import requests
 import config
 
+from generate_message import build_prompt
 
 class llmhandler:
     def llm_response(diff):
 
 
-        prompt = diff
+        prompt = build_prompt(diff)
         response = requests.post(
                 f"{config.OLLAMA_URL}/api/generate",
                 json={
