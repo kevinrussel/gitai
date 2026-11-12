@@ -8,13 +8,13 @@ def main():
 
 
     while True:
-        message = input("Enter a message")
         # response = llmhandler.llm_response(message)
         git_check = githandler()
         if(git_check.check_if_valid_repo()):
             print("In a repo")
         else:
             print("not in a repo")
+        break
         # print(response)
 
 
