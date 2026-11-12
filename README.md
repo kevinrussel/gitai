@@ -123,3 +123,6 @@ Edit it there if you want a different style.
 | `llm_handler.py` | Sends the diff to Ollama and returns the response. |
 | `generate_message.py` | Builds the prompt sent to the model. |
 | `config.py` | User-editable settings. |
+
+
+Hi ariana
