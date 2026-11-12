@@ -1,9 +1,12 @@
 import requests
-
+import config
 
 
 class llmhandler:
-    def llm_response():
+    def llm_response(diff):
+
+
+        prompt = diff
         response = requests.post(
                 f"{config.OLLAMA_URL}/api/generate",
                 json={
