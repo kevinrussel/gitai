@@ -1,7 +1,7 @@
 
 from llm_handler import llmhandler
 from generate_message import build_prompt
-
+from git_handler import githandler
 def main():
 
 
@@ -9,8 +9,13 @@ def main():
 
     while True:
         message = input("Enter a message")
-        response = llmhandler.llm_response(message)
-        print(response)
+        # response = llmhandler.llm_response(message)
+        git_check = githandler()
+        if(git_check.check_if_valid_repo()):
+            print("In a repo")
+        else:
+            print("not in a repo")
+        # print(response)
 
 
 if __name__ == '__main__':
