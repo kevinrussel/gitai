@@ -17,14 +17,13 @@ def main():
         if(config.REQUIRE_CONFIRMATION):
             user_agreement = input(f"Commit Message: {llm_response} Type yes | y to continue or no | n to exit. ")
             if(not user_agreement == "y" and not user_agreement == "yes"):
-                print('hitting 2')
                 return
         
         git_check.git_commit(llm_response)
 
         if( not config.AUTO_PUSH):
             print("All files have been added, none have been pushed")
-        print("hitting")
+            return
         git_check.git_push()
 
 
