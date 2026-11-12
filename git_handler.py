@@ -19,5 +19,12 @@ class githandler:
             return True
         except subprocess.CalledProcessError:
             return False
+
+
+    def git_add(self):
+        self.run_git(["add","-A"])
+
+    def git_commit(self,message):
+        self.run_git(["commit","-m",message])
     
             
